@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xysu2022-del.github.io/vv-princess/sitemap.xml
