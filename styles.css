@@ -104,6 +104,18 @@ button { font: inherit; }
 .visit address { margin: 1.5rem 0 2rem; font-style: normal; }
 .visit address span { display: block; margin-bottom: .6rem; color: var(--gold); font-size: .8rem; letter-spacing: .12em; }
 
+.contact { display: grid; grid-template-columns: .85fr 1.15fr; gap: 8vw; align-items: end; border-top: 1px solid var(--line); }
+.contact h2 { margin: 0; font-family: var(--serif); font-size: clamp(3.2rem, 6vw, 6.5rem); font-weight: 400; line-height: 1.1; letter-spacing: -.04em; }
+.contact-heading > p:last-child { max-width: 30rem; margin: 2rem 0 0; color: var(--muted); }
+.contact-card { position: relative; display: grid; grid-template-columns: .8fr 1.35fr auto; align-items: end; gap: 2rem; padding: 2.5rem 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.contact-card > div { display: flex; flex-direction: column; gap: .65rem; }
+.contact-card > div > span { color: var(--muted); font-size: .78rem; letter-spacing: .12em; }
+.contact-card strong { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; }
+.contact-card > div > a { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.7rem, 3vw, 3rem); line-height: 1; letter-spacing: -.02em; }
+.contact-action { display: inline-flex; align-items: center; gap: .8rem; padding-bottom: .35rem; border-bottom: 1px solid currentColor; font-size: .9rem; white-space: nowrap; }
+.contact-action span { transition: transform .25s; }
+.contact-action:hover span { transform: translate(3px, -3px); }
+
 .site-footer { display: grid; grid-template-columns: 1fr 1fr auto; align-items: end; gap: 2rem; padding: 5rem 5vw 3rem; background: var(--ink); color: rgba(255,255,255,.56); }
 .footer-brand { align-self: start; color: #fff; font-size: clamp(2rem, 4vw, 4rem); }
 .site-footer p { margin: 0; font-size: .78rem; letter-spacing: .08em; }
@@ -121,6 +133,7 @@ button { font: inherit; }
   .visit { grid-template-columns: 1fr; }
   .visit-images { min-height: 65vh; padding-right: 5vw; }
   .visit-images img { min-height: 420px; }
+  .contact { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
@@ -152,6 +165,9 @@ button { font: inherit; }
   .visit-images { grid-template-columns: 1fr .6fr; min-height: 56vh; padding: 1rem; }
   .visit-images img { min-height: 360px; }
   .visit-copy { padding: 5rem 7vw; }
+  .contact { gap: 3rem; }
+  .contact-card { grid-template-columns: 1fr; align-items: start; }
+  .contact-action { margin-top: 1rem; }
   .site-footer { grid-template-columns: 1fr; align-items: start; }
 }
 
