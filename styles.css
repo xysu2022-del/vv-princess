@@ -93,20 +93,15 @@ button { font: inherit; }
 .products-heading > p { max-width: 34rem; margin: 0 0 .8rem; color: var(--muted); }
 .product-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3.5rem) 2.2vw; align-items: start; }
 .product-look { margin: 0; }
-.product-look--hero { grid-column: 1 / span 7; }
-.product-look--autumn { grid-column: 9 / -1; margin-top: 11vw; }
-.product-look--colorways { grid-column: 2 / span 4; }
-.product-look--hoodie-full { grid-column: 7 / span 3; margin-top: 8vw; }
-.product-look--hoodie-angle { grid-column: 10 / -1; margin-top: 2vw; }
-.product-look--knit { grid-column: 1 / span 5; margin-top: 5vw; }
-.product-look--leather { grid-column: 7 / span 5; }
+.product-look--night { grid-column: 1 / span 7; }
+.product-look--studio { grid-column: 9 / -1; margin-top: 11vw; }
+.product-look--puffer { grid-column: 1 / span 4; }
+.product-look--shearling { grid-column: 6 / span 3; margin-top: 7vw; }
+.product-look--mustard { grid-column: 10 / -1; margin-top: 2vw; }
+.product-look--brown { grid-column: 1 / span 5; margin-top: 5vw; }
+.product-look--city { grid-column: 7 / span 5; }
 .product-image { overflow: hidden; background: #d7cfc3; }
-.product-image img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; filter: saturate(.76) contrast(.97); transition: transform .8s ease, filter .5s ease; }
-.product-look--colorways .product-image img { aspect-ratio: 1 / 1.18; }
-.product-look--hoodie-full .product-image img,
-.product-look--hoodie-angle .product-image img,
-.product-look--knit .product-image img,
-.product-look--leather .product-image img { aspect-ratio: 2 / 3; }
+.product-image img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; filter: saturate(.72) contrast(.97); transition: transform .8s ease, filter .5s ease; }
 .product-look:hover .product-image img { transform: scale(1.018); filter: saturate(.9) contrast(1); }
 .product-look figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--ink); }
 .product-look figcaption span { color: var(--gold); font-family: Georgia, serif; font-size: .74rem; letter-spacing: .1em; }
@@ -120,7 +115,7 @@ button { font: inherit; }
 .woman-facts span { color: var(--muted); }
 
 .visit { display: grid; grid-template-columns: 1.2fr .8fr; min-height: 88vh; background: #cfcbc3; }
-.visit-images { display: grid; grid-template-columns: 1fr .55fr; gap: 1rem; padding: 5vw 0 5vw 5vw; }
+.visit-images { padding: 5vw 0 5vw 5vw; }
 .visit-images img { height: 100%; min-height: 580px; object-fit: cover; filter: saturate(.55); }
 .visit-images img:first-child { object-position: center; }
 .visit-copy { display: flex; flex-direction: column; justify-content: center; padding: 6vw; }
@@ -155,13 +150,13 @@ button { font: inherit; }
   .story { grid-template-columns: 1fr 1fr; }
   .story-image { grid-column: 2; margin-top: 0; }
   .collection-grid { gap: 1rem; }
-  .product-look--hero { grid-column: 1 / span 7; }
-  .product-look--autumn { grid-column: 8 / -1; }
-  .product-look--colorways { grid-column: 1 / span 5; }
-  .product-look--hoodie-full { grid-column: 7 / span 3; }
-  .product-look--hoodie-angle { grid-column: 10 / -1; }
-  .product-look--knit { grid-column: 1 / span 5; }
-  .product-look--leather { grid-column: 7 / -1; }
+  .product-look--night { grid-column: 1 / span 7; }
+  .product-look--studio { grid-column: 8 / -1; }
+  .product-look--puffer { grid-column: 1 / span 5; }
+  .product-look--shearling { grid-column: 7 / span 3; }
+  .product-look--mustard { grid-column: 10 / -1; }
+  .product-look--brown { grid-column: 1 / span 5; }
+  .product-look--city { grid-column: 7 / -1; }
   .visit { grid-template-columns: 1fr; }
   .visit-images { min-height: 65vh; padding-right: 5vw; }
   .visit-images img { min-height: 420px; }
@@ -195,16 +190,16 @@ button { font: inherit; }
   .collection-card:nth-child(3) { margin-right: 10vw; }
   .products-heading { gap: 1rem; margin-bottom: 3.5rem; }
   .product-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3.5rem 1rem; }
-  .product-look--hero,
-  .product-look--colorways,
-  .product-look--knit { grid-column: 1 / -1; margin: 0 8vw 0 0; }
-  .product-look--autumn,
-  .product-look--leather { grid-column: 1 / -1; margin: 0 0 0 12vw; }
-  .product-look--hoodie-full,
-  .product-look--hoodie-angle { grid-column: auto; margin: 0; }
+  .product-look--night,
+  .product-look--mustard { grid-column: 1 / -1; margin: 0 8vw 0 0; }
+  .product-look--studio { grid-column: 1 / -1; margin: 0 0 0 12vw; }
+  .product-look--puffer,
+  .product-look--shearling,
+  .product-look--brown,
+  .product-look--city { grid-column: auto; margin: 0; }
   .product-look figcaption { align-items: flex-start; flex-direction: column; gap: .15rem; }
   .woman { gap: 3rem; }
-  .visit-images { grid-template-columns: 1fr .6fr; min-height: 56vh; padding: 1rem; }
+  .visit-images { min-height: 56vh; padding: 1rem; }
   .visit-images img { min-height: 360px; }
   .visit-copy { padding: 5rem 7vw; }
   .contact { gap: 3rem; }
